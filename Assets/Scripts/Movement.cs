@@ -225,7 +225,7 @@ public class Movement : MonoBehaviour
         if (other.gameObject.tag.Equals("RifleItem"))
         {
             Gun.weaponNum = 1;
-            UI.remainAmmo = 30;
+            UI.remainAmmo = 75;
         }
         if (other.gameObject.tag == "SmgItem")
         {
@@ -235,7 +235,7 @@ public class Movement : MonoBehaviour
         if (other.gameObject.tag == "SgItem")
         {
             Gun.weaponNum = 3;
-            UI.remainAmmo = 12;
+            UI.remainAmmo = 8;
         }
         if (other.gameObject.tag == "Cylinder")
         {
