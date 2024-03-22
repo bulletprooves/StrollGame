@@ -225,7 +225,7 @@ public class Movement : MonoBehaviour
         if (other.gameObject.tag.Equals("RifleItem"))
         {
             Gun.weaponNum = 1;
-            UI.remainAmmo = 75;
+            UI.remainAmmo = 60;
         }
         if (other.gameObject.tag == "SmgItem")
         {
