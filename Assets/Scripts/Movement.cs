@@ -31,7 +31,7 @@ public class Movement : MonoBehaviour
         {
             if (hp < 20 && selfHeal == true)
             {
-                hp += 0.05f;
+                hp += 0.0625f;
             }
             else if (hp <= 0) Destroy(gameObject);
             // 공격받음
@@ -52,7 +52,7 @@ public class Movement : MonoBehaviour
         {
             if (selfHealCool < 1f)
             {
-                selfHealCool += 0.2f * Time.fixedDeltaTime;
+                selfHealCool += 0.25f * Time.fixedDeltaTime;
                 if (selfHealCool >= 1f)
                 {
                     selfHeal = true;
@@ -62,7 +62,7 @@ public class Movement : MonoBehaviour
         // 방어 게이지
         if (Gun.isShield == true)
         {
-            shieldGauge -= 0.1f;
+            shieldGauge -= 0.0625f; // 0.5/ 0.25/ 0.125/ 0.0625
             shieldRecharge = false;
         }
         if (UI.isPaused == false)
