@@ -40,7 +40,7 @@ public class CameraFollow : MonoBehaviour
         // 공격 받고 화면 흔들림
         if (Movement.damageTaken == true)
         {
-            ii = Random.Range(-0.1f, 0.1f);
+            ii = Random.Range(-0.25f, 0.25f);
             transform.position = new Vector3(transform.position.x + ii, transform.position.y + ii, transform.position.z);
         }
         else if (Movement.damageTaken == false)
